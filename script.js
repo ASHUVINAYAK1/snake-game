@@ -53,8 +53,8 @@ function gameEngine(){
         }
         scoreBox.innerHTML = "Score: " + score;
         snakeArr.unshift({x: snakeArr[0].x + inputDir.x, y: snakeArr[0].y + inputDir.y});
-        let a = 2;
-        let b = 16;
+        let a = 1;
+        let b = 18;
         food = {x: Math.round(a+(b-a)* Math.random()),y: Math.round(a+(b-a)* Math.random())}
     }
     for (let i = snakeArr.length - 2; i>=0;i--){
